@@ -152,3 +152,40 @@ body {
     text-decoration: line-through;
     color: black;
 }
+
+@media (max-width: 990px) {
+
+    .container h1 {
+        font-size: 2rem;
+        margin: 1rem auto;
+    }
+
+    .add-task {
+        display: flex;
+        width: 99%;
+        
+    }
+
+    .add-task input {
+        /* text-align: center; */
+        font-size: 1.2rem;
+        width: 60vw;
+        /* height: 100%; */
+        margin-left: 50px;
+        letter-spacing: 0;
+    }
+
+    #plus-icon {
+        font-size: 2rem;
+    }
+
+    #element {
+        width: 75%;
+        margin: 10px auto;
+
+    }
+
+    .section-task h3 {
+        margin-bottom: 2.5rem;
+    }
+}
