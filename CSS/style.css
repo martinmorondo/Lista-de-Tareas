@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --white: #fafafb;
+    --purple: #9a67ea;
+    --blue-light: #04d4c3;
+    --blue-dark: #2a73c2;
+    --green: #2c7b90;
+}
+
+body {
+    background: linear-gradient(180deg, #ff9bec 0, #ff98de 3.85%, #ff96cf 7.69%, #ff95c1 11.54%, #ff95b2 15.38%, #ff97a3 19.23%, #ff9a95 23.08%, #ff9e88 26.92%, #ffa27c 30.77%, #ffa771 34.62%, #ffad67 38.46%, #ffb25e 42.31%, #feb858 46.15%, #f2bd53 50%, #e5c251 53.85%, #d8c751 57.69%, #c9cb54 61.54%, #bacf5a 65.38%, #aad361 69.23%, #99d66b 73.08%, #87d976 76.92%, #72db82 80.77%, #5add90 84.62%, #3adf9e 88.46%, #00e0ad 92.31%, #00e1bc 96.15%, #00e1cb 100%);
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Introducción */
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction h1 {
+    color: var(--white);
+}
+
+.introduction span {
+    color: var(--white);
+    letter-spacing: 1.2px;
+}
+
+#date {
+    color: var(--white);
+    padding: 50px 15px 5px 0px;
+}
+
+/* Agregar tareas */
+
+.add-task {
+    background: linear-gradient(to right,whitesmoke,  transparent 50%, pink, gray);
+    border-radius: 30px;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px 10px;
+    margin: 35px auto;
+}
+
+.add-task input {
+    color: white;
+    background: transparent;
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.add-task input:hover {
+    color: white;
+    border: none;
+    background: transparent;
+}
+
+.add-task input:focus {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Times, serif;
+    font-weight: bold;
+    color: whitesmoke;
+    border: transparent;
+    background: transparent;
+}
+
+.add-task input::placeholder {
+    font-size: 1.4rem;
+    color: var(--white);
+    /* text-align: center; */
+    /* margin-left: -90px; */
+    font-weight: bold;
+}
+
+.add-task i {
+    font-size: 50px;
+    color: white;
+}
+
+.add-task i:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* Sección tarea */
+
+.section-task h3 {
+    color: var(--white);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-task li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: linear-gradient(0, #ff99e5 0, #ff97d6 4.17%, #ff95c7 8.33%, #ff95b7 12.5%, #ff96a8 16.67%, #ff9999 20.83%, #ff9d8b 25%, #ffa17e 29.17%, #ffa672 33.33%, #ffac68 37.5%, #ffb25f 41.67%, #feb758 45.83%, #f2bd53 50%, #e5c251 54.17%, #d6c751 58.33%, #c7cc55 62.5%, #b7d05b 66.67%, #a6d463 70.83%, #94d76e 75%, #81d97a 79.17%, #6bdc87 83.33%, #4fde95 87.5%, #24dfa4 91.67%, #00e0b4 95.83%, #00e1c4 100%); */
+    background: linear-gradient(to bottom, #ff99e5, #ffa672);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px auto;
+    color: var(--white);
+    width: 50%;
+   
+}
+
+.section-task i {
+    font-size: 1.5rem;
+}
+
+.section-task i:hover {
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 2rem;
+    color: black;
+}
+
+.section-task > ul p {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: black;
+}
